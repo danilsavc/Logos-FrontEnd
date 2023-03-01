@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import { Link, Navigate } from "react-router-dom";
-import axios from "../../axios";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { fetchOrder } from "../../Redux/Slices/basket";
 
 import styles from "./Ordering.module.css";
 
 const Ordering = () => {
+  const dispatch = useDispatch();
   const isItemInBasket = useSelector((state) => state.basket.ItemsInBasket);
   const isSumPay = useSelector((state) => state.basket.SumPay);
   const isAmountInBasket = useSelector((state) => state.basket.AmountItemInBasket);
@@ -28,7 +29,12 @@ const Ordering = () => {
     call: "Ні",
     item: [],
     amountInBasket: "",
+    numberOrder: "10",
   };
+
+  function generateRandomInteger(min, max) {
+    return Math.floor(min + Math.random()*(max - min + 1))
+  }
 
   const getDataObj = async () => {
     if (conditions) {
@@ -73,12 +79,12 @@ const Ordering = () => {
       objForm.pay = isSumPay;
       objForm.item = isItemInBasket;
       objForm.amountInBasket = isAmountInBasket;
+      objForm.numberOrder = `${generateRandomInteger(100, 999)}`;
+      const data = await dispatch(fetchOrder(objForm));
+      if (!data.payload) {
+        console.log("Замовлення не відправлено!");
+      }
     }
-
-    console.log(objForm);
-
-    await axios.post(`/order`, objForm);
-    <Navigate to='/' />;
   };
 
   return (

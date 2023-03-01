@@ -8,7 +8,6 @@ import OneOrderItem from "./OneOrderItem";
 
 const OneOrder = () => {
   const { id } = useParams();
-
   const [data, setData] = React.useState();
 
   React.useEffect(() => {
@@ -55,6 +54,7 @@ const OneOrder = () => {
           <div className={style.call}>Уточнення замовлення: {data.call}</div>
           <div className={style.phone}>Телефон: +380{data.phone}</div>
           <div>Дата створення замовлення: {data.createdAt}</div>
+          <div>До оплати: {data.pay}</div>
         </div>
       </div>
     );

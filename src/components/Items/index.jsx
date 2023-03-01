@@ -8,6 +8,8 @@ import ItemAddition from "./ItemAddition";
 import styles from "./Items.module.css";
 import SkeletonOneItem from "../Skeleton/SkeletonOneItem";
 import { truncateText, truncateTitle } from "../../truncate";
+import { useDispatch } from "react-redux";
+import { setItemInBasket } from "../../Redux/Slices/basket";
 
 const Items = ({ user_role }) => {
   const [data, setData] = React.useState();
@@ -18,6 +20,12 @@ const Items = ({ user_role }) => {
   const [deleteItem, setDeleteItem] = React.useState(false);
 
   const { id } = useParams();
+  
+  const dispatch = useDispatch();
+  const amountItem = 1;
+  function AddToBasket(obj) {
+    dispatch(setItemInBasket(obj));
+  };
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -88,7 +96,7 @@ const Items = ({ user_role }) => {
               <p className={styles.tbci_p}>{data.text}</p>
               <p className={styles.tbci_gramm}>Вага: {data.weight} г</p>
               <div className={styles.lineblock}>
-                <button className={styles.tbcil_butt}>
+                <button onClick={() => {AddToBasket({ title: data.title, weight: data.weight, text: data.text, price: data.price, imgUrl:data.imgUrl, id: id, amountItem: amountItem})}} className={styles.tbcil_butt}>
                   Кошик
                   <div className={styles.tbcil_verline}></div>
                   <div className={styles.tbcil_img}></div>
