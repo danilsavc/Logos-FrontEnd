@@ -1,0 +1,130 @@
+.m_aboutblock {
+  /* position: relative; */
+  margin-top: 90px;
+  width: 1400px;
+  height: 610px;
+  background-image: url("https://i.onthe.io/smngoz5m0l6jhf9rg.3c2c8e96.png");
+  background-size: 1400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mab_shadow {
+  width: 100%;
+  height: 100%;
+  padding: 70px 100px 70px 70px;
+  background: linear-gradient(90deg, #211F20 32%, rgba(68, 64, 63, 0) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mabs_left {
+  min-width: 563px;
+}
+
+.mabsl_h1 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 26px;
+}
+
+.mabsl_p {
+  margin-bottom: 60px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #CFCFCF;
+}
+
+.mabsl_butt {
+  padding: 22px 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.mabs_right {
+  display: flex;
+  /* justify-content: space-around;
+  align-items: stretch; */
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+
+.mabsr_block {
+  width: 228px;
+  height: 227px;
+  background: rgba(80, 75, 74, 0.9);
+  padding: 60px 20px 40px 20px;
+  margin: 0 15px 15px 0;
+}
+
+.mabsrb_img_onion {
+  background-image: url("../../../img/onion1.svg");
+  width: 70px;
+  height: 70px;
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.mabsrb_img_flash {
+  background-image: url("../../../img/flash1.svg");
+  width: 70px;
+  height: 70px;
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.mabsrb_img_chef {
+  background-image: url("../../../img/chef1.svg");
+  width: 70px;
+  height: 70px;
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.mabsrb_p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mabsrb_p1 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #79B282;
+  margin: 0 auto;
+  text-align: center;
+}

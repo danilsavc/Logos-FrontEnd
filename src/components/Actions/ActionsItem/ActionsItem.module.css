@@ -1,0 +1,51 @@
+.content {
+  width: 440px;
+  height: 350px;
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 180px 37px 85px 50px;
+  grid-template-areas: "img" "title" "text" "date";
+  align-items: center;
+
+}
+
+.img {
+  grid-area: img;
+  height: 180px;
+}
+
+.title {
+  grid-area: title;
+  margin-left: 25px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.text {
+  grid-area: text;
+  margin-left: 25px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #A6A7AB;
+}
+
+.date {
+  grid-area: date;
+  margin-left: 25px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6FA076;
+}

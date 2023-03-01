@@ -1,0 +1,81 @@
+.Footer {
+    background: linear-gradient(270.7deg, #44403F 0.4%, #211F20 100%);
+    padding: 26px 160px;
+    /* display: flex;
+    align-items: center; */
+}
+
+.f_container {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.fi_title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.fi_txt {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #CFCFCF;
+    margin-bottom: 7px;
+}
+
+.fi_a {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.fi_a:hover {
+    opacity: 0.5;
+    transition: ease 0.3s;
+}
+
+.f_nav {
+    margin-left: 46px;
+}
+
+.fn_butt {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    background: none;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: color .1s linear;
+}
+
+.fn_butt:hover {
+    color: #CFCFCF;
+}
+
+.fn_buttActive,
+.fn_buttActive:hover {
+    font-weight: 700;
+    color: #618967;
+    text-shadow: 0px 5px 12px rgba(114, 164, 121, 0.3);
+}

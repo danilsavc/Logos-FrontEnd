@@ -1,0 +1,211 @@
+.header_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+    margin-bottom: 24px;
+}
+
+.ht_title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    margin-right: 72px;
+}
+
+.ht_input {
+    width: 555px;
+    height: 52px;
+    background: #504B4A;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #CFCFCF;
+    margin-right: 30px;
+    padding-left: 48px;
+}
+
+.ht_input::placeholder {
+    color: #CFCFCF;
+}
+
+.ht_call {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.ht_call_img {
+    background-image: url('../../img/Calling.svg');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+}
+
+.ht_txt1 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 32px;
+}
+
+.ht_txt2 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.ht_hr_vertical {
+    height: 52px;
+    border: none;
+    border: 1px solid #635C5A;
+}
+
+.ht_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 21px;
+    margin-right: 50px;
+}
+
+.ht_person_img {
+    background-image: url('../../img/Profile.svg');
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.ht_txt3 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.ht_basket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Gilroy';
+    font-style: normal;
+    cursor: pointer;
+}
+
+.htb_title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.ht_hr_vertical2 {
+    height: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 7px 0;
+    margin-right: 12px;
+}
+
+.htb_num {
+    width: 24px;
+    height: 24px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin-right: 14px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #403C3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_hr {
+    border: 1px solid #635C5A;
+}
+
+.header_banner {
+    width: 1536px;
+    height: 430px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hb_img {
+    width: 1130px;
+    height: 430px;
+    background-image: url('https://i.onthe.io/smngozsrdpnimunlc.f99fba98.png');
+    background-size: 1130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hb_shadow {
+    width: 1180px;
+    height: 430px;
+    background: linear-gradient(90deg, #211F20 38%, rgba(68, 64, 63, 0) 100%);
+    position: relative;
+}
+
+.hb_span {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    font-family: 'Gilroy';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 109.2%;
+    text-align: center;
+    transform: rotate(-8.37deg);
+}
+
+.hb_span_butt {
+    position: absolute;
+    top: 230px;
+    left: 230px;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    padding: 8px 25px;
+    font-family: 'Gilroy';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 109.2%;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(-8.37deg);
+}

@@ -1,0 +1,52 @@
+.actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 165px 1fr 582px;
+  grid-template-areas: "title" "item" "map";
+  align-items: center;
+}
+
+.title {
+  grid-area: title;
+
+  width: 126px;
+  height: 125px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "stick text";
+  align-items: center;
+}
+
+.block {
+  grid-area: stick;
+
+  width: 33px;
+  height: 4px;
+
+  background: #618967;
+  transform: rotate(90deg);
+}
+
+.text {
+  grid-area: text;
+  justify-self: start;
+}
+
+.text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.item {
+  grid-area: item;
+
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  row-gap: 50px;
+  column-gap: 40px;
+}

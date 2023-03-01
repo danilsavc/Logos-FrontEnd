@@ -1,0 +1,42 @@
+.titleline {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.tl_verline {
+    background: #618967;
+    width: 4px;
+    height: 33px;
+    margin-right: 20px;
+}
+
+.tl_title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.itemsblock {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    row-gap: 40px;
+    /* column-gap: auto; */
+    margin-bottom: 150px;
+}
+
+.target {
+    width: 100%;
+    height: 150px;
+}
+
+.pagination {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+.map {
+  grid-area: map;
+  position: relative;
+}
+
+.contact {
+  position: absolute;
+  top: 67px;
+  left: 109px;
+  width: 526px;
+  height: 405px;
+  background: #2E2B2C;
+  box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+
+}

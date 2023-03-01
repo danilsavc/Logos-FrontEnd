@@ -1,0 +1,36 @@
+.m_titleblock {
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
+  margin-bottom: 50px;
+}
+
+.mtb_verline {
+  width: 4px;
+  height: 33px;
+  background: #618967;
+  margin-right: 20px;
+}
+
+.mtb_title {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.m_itemslineblock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.m_hr {
+  margin: 50px 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}

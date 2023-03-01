@@ -1,0 +1,84 @@
+.block {
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+    max-width: 325px;
+}
+
+.b_img {
+    width: 325px;
+    height: 227px;
+    border-radius: 10px 10px 0 0;
+}
+
+.b_container {
+    padding: 15px 16px 18px 20px;
+}
+
+.b_linecont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bl_title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.bl_gramm {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.b_p {
+    margin: 5px 0 32px 0;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #CFCFCF;
+}
+
+.bl_price {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.bl_butt {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.blb_img {
+    width: 24px;
+    height: 24px;
+    background-image: url('../../../img/Buy.svg');
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 12px;
+}

@@ -1,0 +1,95 @@
+
+.mbb_item {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.mbbi_img {
+    background-size: 117px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 117px;
+    height: 86px;
+    margin-right: 39px;
+}
+
+.mbbi_info {
+    margin-right: 210px;
+}
+
+.mbbii_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.mbbii_txt {
+    max-width: 265px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #A6A7AB;
+}
+
+.mbbi_amount {
+    padding: 14px;
+    margin-right: 116px;
+}
+
+.mbbia_butt {
+    background: #72A479;
+    border: none;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    cursor: pointer;
+    transition: color .1s linear;
+}
+
+.mbbia_butt:hover {
+    color: black;
+}
+
+.mbbia_num {
+    margin: 0 13px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.mbbi_price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-right: 71px;
+}
+
+.mbbi_cancel {
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background: #72A479;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    transform: rotate(45deg);
+    transition: color .1s linear;
+}
+
+.mbbi_cancel:hover {
+    color: black;
+}

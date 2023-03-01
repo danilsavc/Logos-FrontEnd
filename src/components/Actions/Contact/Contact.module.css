@@ -1,0 +1,182 @@
+.contact {
+  display: grid;
+  grid-template-columns: 43px 1fr;
+  grid-template-rows: 61px 27px 80px 61px 29px 77px 74px;
+  grid-template-areas: ". title" ". stick" ". location" ". message" ". stick2" ". order" ". sites";
+  align-items: center;
+}
+
+.title {
+  grid-area: title;
+  justify-self: start;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.stick {
+  grid-area: stick;
+}
+
+.stick2 {
+  grid-area: stick2;
+}
+
+.stick,
+.stick2 {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(270.7deg, #44403F 0.4%, #211F20 100%);
+}
+
+.location {
+  grid-area: location;
+
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: repeat(2, 2fr);
+  grid-template-areas:
+    "imgLocation ownAdress"
+    ". adress";
+}
+
+.ownAdress {
+  grid-area: ownAdress;
+}
+
+.adress {
+  grid-area: adress;
+}
+
+.imgLocation {
+  grid-area: imgLocation;
+}
+
+.ownAdress,
+.ownEmail {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #aeaeae;
+}
+
+.adress,
+.email {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #dedddd;
+}
+
+.message {
+  grid-area: message;
+
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: repeat(2, 2fr);
+  grid-template-areas:
+    "imgMessage ownEmail"
+    ". email";
+}
+
+.email {
+  grid-area: email;
+}
+
+.ownEmail {
+  grid-area: ownEmail;
+}
+
+.imgMessage {
+  grid-area: imgMessage;
+}
+
+.order {
+  grid-area: order;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "btn telephone"
+    "btn call";
+  align-items: center;
+}
+
+.btn {
+  grid-area: btn;
+
+  width: 211px;
+  height: 59px;
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  border-radius: 10px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0px 5px 10px rgba(114, 163, 121, 0.7);
+  transition: ease 0.5s;
+}
+
+.telephone {
+  grid-area: telephone;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.call {
+  grid-area: call;
+  justify-self: start;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: right;
+  color: #CFCFCF;
+}
+
+.sites {
+  grid-area: sites;
+  justify-self: center;
+
+  display: grid;
+  grid-template-columns: 163px 30px 30px 30px;
+  grid-template-rows: 1fr;
+}
+
+.site {
+  cursor: pointer;
+}
+
+.site:hover {
+  opacity: 0.5;
+  transition: ease 0.5s;
+}

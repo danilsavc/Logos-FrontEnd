@@ -1,0 +1,84 @@
+.Login_main {
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.Login {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.login_top {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.lt_hr {
+    width: 4px;
+    height: 33px;
+    background: #618967;
+    border: none;
+    margin-right: 20px;
+}
+
+.lt_title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.login_block {
+    width: 100%;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lb_input {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background: none;
+    width: 363px;
+    height: 60px;
+    margin: 10px 0;
+    padding: 0 30px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.lb_input::placeholder {
+    color: #FFFFFF;
+}
+
+/* .lb_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.lbb_butt {
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 18px 24px;
+    margin: 10px 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,123 @@
+.title {
+  align-self: center;
+
+  width: 348px;
+  height: 125px;
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  grid-template-areas: "stick text";
+  align-items: center;
+}
+
+.block {
+  grid-area: stick;
+
+  width: 33px;
+  height: 4px;
+
+  background: #618967;
+  transform: rotate(90deg);
+}
+
+.text {
+  grid-area: text;
+  justify-self: center;
+}
+
+.text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+}
+
+.item {
+  display: grid;
+  row-gap: 10px;
+}
+
+.map {
+  width: 639px;
+  height: 550px;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: 1fr 2fr 37px;
+  grid-template-areas: "schedule" "minimum" ".";
+  row-gap: 30px;
+  align-items: start;
+}
+
+.schedule {
+  grid-area: schedule;
+  display: grid;
+  grid-template-columns: repeat(2, 270px);
+  grid-template-rows: repeat(2, 40px);
+  grid-template-areas: "deliveryDate cafeDate" "deliveryClock cafeClock";
+}
+
+.deliveryDate {
+  grid-area: deliveryDate;
+}
+
+.deliveryClock {
+  grid-area: deliveryClock;
+}
+
+.cafeDate {
+  grid-area: cafeDate;
+}
+
+.cafeClock {
+  grid-area: cafeClock;
+}
+
+.deliveryClock,
+.cafeClock {
+  color: #CFCFCF;
+}
+
+.cafeDate,
+.deliveryDate {
+  color: #FFFFFF;
+}
+
+.minimum {
+  grid-area: minimum;
+
+  width: 700px;
+  display: grid;
+  grid-template-rows: 30px 120px;
+  grid-template-areas: "order" "minimumText";
+  align-items: center;
+}
+
+.order {
+  grid-area: order;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.minimumText {
+  grid-area: minimumText;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  color: #CFCFCF;
+}

@@ -1,0 +1,92 @@
+.profile {
+  display: grid;
+  grid-template-rows: 200px 1fr 150px;
+}
+
+.title {
+  align-self: center;
+
+  width: 220px;
+  height: 125px;
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  grid-template-areas: "stick text";
+  align-items: center;
+}
+
+.block {
+  grid-area: stick;
+
+  width: 33px;
+  height: 4px;
+
+  background: #618967;
+  transform: rotate(90deg);
+}
+
+.text {
+  grid-area: text;
+  justify-self: center;
+}
+
+.text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.content {
+  justify-self: center;
+
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.firstName,
+.lastName,
+.phone,
+.email {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 39px;
+
+  color: #FFFFFF;
+}
+
+.firstNameBd,
+.lastNameBd,
+.phoneBd,
+.emailBd {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 39px;
+
+  color: #adadad;
+}
+
+.btn {
+  justify-self: center;
+  align-self: center;
+  margin-right: 250px;
+
+  width: 265px;
+  height: 60px;
+  padding: 17px 50px;
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  border-radius: 10px;
+  border: none;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 17px;
+  color: #FFFFFF;
+  cursor: pointer;
+}

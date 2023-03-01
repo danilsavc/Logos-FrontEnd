@@ -1,0 +1,152 @@
+/* .createItem {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  justify-content: center;
+} */
+
+.titleHeader {
+  width: 250px;
+  height: 125px;
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  grid-template-areas: "stick text";
+  align-items: center;
+}
+
+.block {
+  grid-area: stick;
+
+  width: 33px;
+  height: 4px;
+
+  background: #618967;
+  transform: rotate(90deg);
+}
+
+.textHeader {
+  grid-area: text;
+  justify-self: center;
+}
+
+.textHeader span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.content {
+  display: grid;
+
+  grid-template-columns: 250px 500px;
+  grid-template-areas:
+    "title input_title"
+    "text input_text"
+    "weight input_weight"
+    "price input_price"
+    "imgUrl input_imgUrl"
+    "category input_category"
+    ". ."
+    "btn btn"
+    ". .";
+  gap: 50px;
+  justify-content: center;
+}
+
+.text,
+.title,
+.weight,
+.categoryName,
+.category,
+.imgUrl,
+.price {
+  font-size: 20px;
+  line-height: 39px;
+
+  color: #FFFFFF;
+}
+
+.content input {
+  width: 363px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: none;
+  padding: 20px 30px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.title {
+  grid-area: title;
+}
+
+.text {
+  grid-area: text;
+}
+
+.weight {
+  grid-area: weight;
+}
+
+.price {
+  grid-area: price;
+}
+
+.imgUrl {
+  grid-area: imgUrl;
+}
+
+.category {
+  grid-area: category;
+}
+
+.input_title {
+  grid-area: input_title;
+}
+
+.input_text {
+  grid-area: input_text;
+}
+
+.input_weight {
+  grid-area: input_weight;
+}
+
+.input_price {
+  grid-area: input_price;
+}
+
+.input_imgUrl {
+  grid-area: input_imgUrl;
+}
+
+
+.input_category {
+  grid-area: input_category;
+}
+
+.btn {
+  grid-area: btn;
+  justify-self: center;
+
+  width: 200px;
+  padding: 17px 50px;
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  border-radius: 10px;
+  border: none;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
