@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ItemAddition from "../../Items/ItemAddition";
 import styles from "./Preview.module.css";
 import SkeletonOneItem from "../../Skeleton/SkeletonOneItem";
-import axios from "axios";
+import axios from "../../../axios";
 import { truncateText, truncateTitle } from "../../../truncate";
 
 const Preview = ({ MainTitle, categoryID }) => {
@@ -13,7 +13,7 @@ const Preview = ({ MainTitle, categoryID }) => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     axios
-      .get(`http://localhost:4444/items/categoryId/${categoryId}`)
+      .get(`/items/categoryId/${categoryId}`)
       .then((res) => {
         setItems(res.data.results.slice(0, 4));
         setLoading(false);
