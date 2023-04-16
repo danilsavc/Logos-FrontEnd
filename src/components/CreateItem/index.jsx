@@ -33,7 +33,7 @@ const CreateItem = () => {
       navigate(`/items/${_id}`);
     } catch (err) {
       console.warn(err);
-      alert("Помилка при створенні товару");
+      alert("Помилка при створенні Товару");
     }
   };
 
