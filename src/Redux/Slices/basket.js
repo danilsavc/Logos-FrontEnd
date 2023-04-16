@@ -1,9 +1,16 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "../../axios";
+
+export const fetchOrder = createAsyncThunk("/order/fetchOrder", async (params) => {
+    const { data } = await axios.post("/order", params);
+    return data;
+});
 
 const initialState = {
     ItemsInBasket: [],
     AmountItemInBasket: 0,
     SumPay: 0,
+    status: "loading",
 };
 
 function CheckRepeatItem(items, checkItem) {
@@ -64,6 +71,24 @@ const basketSlice = createSlice({
             state.ItemsInBasket = NewArrayItem;
             state.AmountItemInBasket -= 1;
             state.SumPay -= action.payload.price;
+        },
+    },
+    extraReducers: {
+        [fetchOrder.pending]: (state) => {
+            state.ItemsInBasket = [];
+            state.AmountItemInBasket = 0;
+            state.SumPay = 0;
+            state.status = "loading";
+        },
+        [fetchOrder.fulfilled]: (state) => {
+            state.ItemsInBasket = [];
+            state.status = "loaded";
+            state.AmountItemInBasket = 0;
+            state.SumPay = 0;
+        },
+        [fetchOrder.rejected]: (state) => {
+            state.ItemsInBasket = [];
+            state.status = "error";
         },
     },
 });
