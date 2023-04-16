@@ -1,4 +1,5 @@
 {
+  "proxy": "http://localhost:4444",
   "name": "logos",
   "version": "0.1.0",
   "private": true,
